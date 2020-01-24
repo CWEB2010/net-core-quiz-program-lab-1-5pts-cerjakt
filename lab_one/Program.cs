@@ -6,8 +6,14 @@ namespace lab_one
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello World!");
+        string[] questions = { "What year did this start?", "When do cla" }
+        int x;
+        //looping structure
+        for(x=0; x < questions.Length; x++){
+                Console.WriteLine(questions[x]);
+                for (y = 0)
+        }
+        
         }
     }
 }
