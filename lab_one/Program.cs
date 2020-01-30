@@ -8,8 +8,8 @@ namespace lab_one
         {
             string[] answerKey = { "B", "B", "C", "A", "D", "A", "A", "C", "D", "A" }; //Array of answers in order
             string[] userChoice = new string[] { }; //the option the user selected
-            string userSelection; 
-            string[] questions = 
+            string userSelection;
+            string[] questions =
             {"1. .NET Core is created and maintained by how many developers?",
              "2. What company develops .NET Core?",
              "3. ",
@@ -95,7 +95,24 @@ namespace lab_one
             totalIncorrect = 0;
 
             Console.WriteLine("Welcome, this is a quiz on .NET Core. This quiz will consist of 3 questions. You must have 2 out of 3 correct to pass the quiz");
-            Console.WriteLine("To get started, please enter 1 to start the program");
+            Console.WriteLine("To get started, please enter any key besides 2.");
+
+            String userInput = Console.ReadKey().Key.ToString();
+
+            while (userInput != EXIT || userInput != EXIT2) //initiates while loop if user used a key besides 2 as their input.
+            {
+                for (x = 0; x < questions.Length; x++)
+                {
+                    Console.WriteLine(questions[x]);
+
+                    for (y = 0; x < optionChoices.Length; x++)
+                    {
+                        Console.WriteLine(optionChoices[x, y]);
+                    }
+
+                } //End of while loop
+                Console.WriteLine("Thank you for taking the quiz");
+            }
         }
     }
 }
