@@ -7,7 +7,7 @@ namespace lab_one
         static void Main(string[] args)
         {
             string[] answerKey = { "B", "B", "C", "A", "D", "A", "A", "C", "D", "A" }; //Array of answers in order
-            string[] userChoice = new string[10]; //the option the user selected
+            string[] userChoice = new string[] { }; //the option the user selected
             string userSelection; 
             string[] questions = 
             {"1. .NET Core is created and maintained by how many developers?",
@@ -24,10 +24,10 @@ namespace lab_one
             string[,] optionChoices = //sets of 4 options for each question
             {
             {
-            "A. ",
-            "B. ",
-            "C. ",
-            "D. "
+            "A. 5,000",
+            "B. 10,000",
+            "C. 15,000",
+            "D. 20,000"
             },
             {
             "A. ",
@@ -84,6 +84,18 @@ namespace lab_one
             "D. "
             }
             };
+
+            String primingValue; //start the program
+            String EXIT = "NumPad2"; //numpad 2 input from user
+            String EXIT2 = "D2"; //2 input from user
+            int x, y;
+            int totalCorrect, totalIncorrect;
+
+            totalCorrect = 0;
+            totalIncorrect = 0;
+
+            Console.WriteLine("Welcome, this is a quiz on .NET Core. This quiz will consist of 3 questions. You must have 2 out of 3 correct to pass the quiz");
+            Console.WriteLine("To get started, please enter 1 to start the program");
         }
     }
 }
