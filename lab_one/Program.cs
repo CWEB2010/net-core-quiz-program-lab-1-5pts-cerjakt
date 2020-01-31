@@ -110,6 +110,21 @@ namespace lab_one
                         Console.WriteLine(optionChoices[x, y]);
                     }
 
+                    Console.WriteLine("Please enter your selection");
+
+                    userSelection = Console.ReadLine().ToUpper();
+
+                    if (userSelection == answerKey[x])
+                    {
+                        totalCorrect = totalCorrect + 1;
+                        Console.WriteLine("Answer is correct");
+                    }
+                    else
+                    {
+                        totalIncorrect++;
+                        Console.WriteLine("Answer is incorrect");
+                    }
+
                 } //End of while loop
                 Console.WriteLine("Thank you for taking the quiz");
             }
